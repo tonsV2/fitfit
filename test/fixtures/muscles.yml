@@ -1,11 +1,285 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  description: MyText
-  url: MyString
+adductors:
+  name: Adductors
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Adductors.html
 
-two:
-  name: MyString
-  description: MyText
-  url: MyString
+biceps_brachii:
+  name: Biceps Brachii
+  description: 
+  muscle_group: upper_arm
+  url: http://exrx.net/Muscles/BicepsBrachii.html
+
+brachialis:
+  name: Brachialis
+  description: 
+  muscle_group: upper_arm
+  url: http://exrx.net/Muscles/Brachialis.html
+
+brachioradialis:
+  name: Brachioradialis
+  description: 
+  muscle_group: forearm
+  url: http://exrx.net/Muscles/Brachioradialis.html
+
+deltoid_anterior:
+  name: Deltoid Anterior
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/DeltoidAnterior.html
+
+deltoid_lateral:
+  name: Deltoid Lateral
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/DeltoidLateral.html
+
+deltoid_posterior:
+  name: Deltoid Posterior
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/DeltoidPosterior.html
+
+hip_exernal_rotators:
+  name: Hip Exernal Rotators
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/HipExernalRotators.html
+
+erector_spinae:
+  name: Erector Spinae
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/ErectorSpinae.html
+
+gastrocnemius:
+  name: Gastrocnemius
+  description: 
+  muscle_group: calf
+  url: http://exrx.net/Muscles/Gastrocnemius.html
+
+gluteus_maximus:
+  name: Gluteus Maximus
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/GluteusMaximus.html
+
+gluteus_medius:
+  name: Gluteus Medius
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/GluteusMedius.html
+
+gluteus_minimus:
+  name: Gluteus Minimus
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/GluteusMinimus.html
+
+gracilis:
+  name: Gracilis
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Gracilis.html
+
+hamstrings:
+  name: Hamstrings
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Hamstrings.html
+
+iliopsoas:
+  name: Iliopsoas
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/Iliopsoas.html
+
+infraspinatus:
+  name: Infraspinatus
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/Infraspinatus.html
+
+latissimus_dorsi:
+  name: Latissimus Dorsi
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/LatissimusDorsi.html
+
+levator_scapulae:
+  name: Levator Scapulae
+  description: 
+  muscle_group: neck
+  url: http://exrx.net/Muscles/LevatorScapulae.html
+
+obliques:
+  name: Obliques
+  description: 
+  muscle_group: waist
+  url: http://exrx.net/Muscles/Obliques.html
+
+pectineus:
+  name: Pectineus
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Pectineus.html
+
+pectoralis_clavicular:
+  name: Pectoralis Clavicular
+  description: 
+  muscle_group: chest
+  url: http://exrx.net/Muscles/PectoralisClavicular.html
+
+pectoralis_sternal:
+  name: Pectoralis Sternal
+  description: 
+  muscle_group: chest
+  url: http://exrx.net/Muscles/PectoralisSternal.html
+
+pectoralis_minor:
+  name: Pectoralis Minor
+  description: 
+  muscle_group: chest
+  url: http://exrx.net/Muscles/PectoralisMinor.html
+
+popliteus:
+  name: Popliteus
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Popliteus.html
+
+quadratus_lumborum:
+  name: Quadratus Lumborum
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/QuadratusLumborum.html
+
+quadriceps:
+  name: Quadriceps
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Quadriceps.html
+
+rectus_abdominis:
+  name: Rectus Abdominis
+  description: 
+  muscle_group: waist
+  url: http://exrx.net/Muscles/RectusAbdominis.html
+
+rhomboids:
+  name: Rhomboids
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/Rhomboids.html
+
+sartorius:
+  name: Sartorius
+  description: 
+  muscle_group: thigh
+  url: http://exrx.net/Muscles/Sartorius.html
+
+serratus_anterior:
+  name: Serratus Anterior
+  description: 
+  muscle_group: chest
+  url: http://exrx.net/Muscles/SerratusAnterior.html
+
+soleus:
+  name: Soleus
+  description: 
+  muscle_group: calf
+  url: http://exrx.net/Muscles/Soleus.html
+
+splenius:
+  name: Splenius
+  description: 
+  muscle_group: neck
+  url: http://exrx.net/Muscles/Splenius.html
+
+sternocleidomastoid:
+  name: Sternocleidomastoid
+  description: 
+  muscle_group: neck
+  url: http://exrx.net/Muscles/Sternocleidomastoid.html
+
+subscapularis:
+  name: Subscapularis
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/Subscapularis.html
+
+supraspinatus:
+  name: Supraspinatus
+  description: 
+  muscle_group: shoulder
+  url: http://exrx.net/Muscles/Supraspinatus.html
+
+tensor_fasciae_latae:
+  name: Tensor FasciaeLatae
+  description: 
+  muscle_group: hip
+  url: http://exrx.net/Muscles/TensorFasciaeLatae.html
+
+teres_major:
+  name: Teres Major
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/TeresMajor.html
+
+teres_minor:
+  name: Teres Minor
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/TeresMinor.html
+
+tibialis_anterior:
+  name: Tibialis Anterior
+  description: 
+  muscle_group: calf
+  url: http://exrx.net/Muscles/TibialisAnterior.html
+
+transverse_abdominis:
+  name: Transverse Abdominis
+  description: 
+  muscle_group: waist
+  url: http://exrx.net/Muscles/TransverseAbdominis.html
+
+trapezius_lower:
+  name: Trapezius Lower
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/TrapeziusLower.html
+
+trapezius_middle:
+  name: Trapezius Middle
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/TrapeziusMiddle.html
+
+trapezius_upper:
+  name: Trapezius Upper
+  description: 
+  muscle_group: back
+  url: http://exrx.net/Muscles/TrapeziusUpper.html
+
+triceps_brachii:
+  name: Triceps Brachii
+  description: 
+  muscle_group: upper_arm
+  url: http://exrx.net/Muscles/TricepsBrachii.html
+
+wrist_extensors:
+  name: Wrist Extensors
+  description: 
+  muscle_group: forearm
+  url: http://exrx.net/Muscles/WristExtensors.html
+
+wrist_flexors:
+  name: Wrist Flexors
+  description: 
+  muscle_group: forearm
+  url: http://exrx.net/Muscles/WristFlexors.html
+
+

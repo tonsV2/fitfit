@@ -1,9 +1,42 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  description: MyText
+neck:
+  name: Neck
+  description: 
 
-two:
-  name: MyString
-  description: MyText
+shoulder:
+  name: Shoulder
+  description: 
+
+upper_arm:
+  name: Upper Arm
+  description: 
+
+forearm:
+  name: Forearm
+  description: 
+
+back:
+  name: Back
+  description: 
+
+chest:
+  name: Chest
+  description: 
+
+waist:
+  name: Waist
+  description: 
+
+hip:
+  name: Hip
+  description: 
+
+thigh:
+  name: Thigh
+  description: 
+
+calf:
+  name: Calf
+  description: 
+
