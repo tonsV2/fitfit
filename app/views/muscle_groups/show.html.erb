@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @muscle_group.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @muscle_group.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_muscle_group_path(@muscle_group) %> |
+<%= link_to 'Back', muscle_groups_path %>

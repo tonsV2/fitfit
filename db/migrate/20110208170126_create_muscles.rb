@@ -4,6 +4,7 @@ class CreateMuscles < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.string :url
+      t.references :musclegroup
 
       t.timestamps
     end

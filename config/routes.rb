@@ -1,4 +1,6 @@
 Fitfit::Application.routes.draw do
+  resources :muscle_groups
+
   resources :muscles
 
 #  get "home/index"
