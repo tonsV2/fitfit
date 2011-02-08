@@ -15,5 +15,7 @@
       %td= link_to 'Show', muscle
       %td= link_to 'Edit', edit_muscle_path(muscle)
       %td= link_to 'Destroy', muscle, :confirm => 'Are you sure?', :method => :delete
+= will_paginate @muscles
+= page_entries_info @posts
 %br/
 = link_to 'New Muscle', new_muscle_path

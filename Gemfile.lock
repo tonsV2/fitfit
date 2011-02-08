@@ -94,6 +94,7 @@ GEM
     tzinfo (0.3.24)
     warden (1.0.3)
       rack (>= 1.0.0)
+    will_paginate (3.0.pre)
 
 PLATFORMS
   ruby
@@ -107,3 +108,4 @@ DEPENDENCIES
   nested_form!
   rails (= 3.0.3)
   sqlite3-ruby
+  will_paginate (= 3.0.pre)

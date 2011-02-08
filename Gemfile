@@ -14,6 +14,7 @@ gem 'hpricot' # required by haml
 
 gem "nested_form", :git => 'git://github.com/madebydna/nested_form.git'
 
+gem 'will_paginate', '~> 3.0.pre2'
 
 gem 'heroku'
 

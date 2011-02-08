@@ -1,8 +1,9 @@
 class MusclesController < ApplicationController
   # GET /muscles
   # GET /muscles.xml
+
   def index
-    @muscles = Muscle.all
+    @muscles = Muscle.paginate :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
       format.html # index.html.erb
