@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @exercise.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @exercise.description %>
+</p>
+
+<p>
+  <b>Preparation:</b>
+  <%= @exercise.preparation %>
+</p>
+
+<p>
+  <b>Execution:</b>
+  <%= @exercise.execution %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @exercise.comment %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @exercise.url %>
+</p>
+
+<p>
+  <b>Exercise type:</b>
+  <%= @exercise.exercise_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+<%= link_to 'Back', exercises_path %>
