@@ -34,6 +34,6 @@
   .field
     = f.label :exercise_type
     %br/
-    = f.text_field :exercise_type
+    = f.select :exercise_type_id, @exercise_types.map {|f| [f.name, f.id]}
   .actions
     = f.submit
