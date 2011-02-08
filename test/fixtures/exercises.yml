@@ -2,18 +2,28 @@
 
 one:
   name: MyString
-  description: MyText
-  preparation: MyText
-  execution: MyText
   comment: MyText
   url: MyString
   exercise_type: 
 
-two:
-  name: MyString
+
+reverse_curl:
+  name: Reverse Curl
   description: MyText
   preparation: MyText
   execution: MyText
-  comment: MyText
-  url: MyString
-  exercise_type: 
+  comment: When elbows are fully flexed, they can travel forward slightly allowing forearms to be no more than vertical. This additional movement allows for relative release of tension in muscles between repetitions.
+#  muscles: brachioradialis, brachialis, biceps_brachii
+  exercise_type: barbell
+
+arnold_press:
+  name: Arnold Press
+  description: MyText
+  preparation: MyText
+  execution: MyText
+  comment: None
+#  muscles: deltoid_anterior, deltoid_lateral, triceps_brachii
+  exercise_type: dumbbell
+
+
+
