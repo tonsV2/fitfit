@@ -7,7 +7,15 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem 'devise', '1.2.rc'
+gem 'mysql2'
 gem 'haml'
+gem 'hpricot' # required by haml
+
+gem "nested_form", :git => 'git://github.com/madebydna/nested_form.git'
+
+
+gem 'heroku'
 
 
 # Use unicorn as the web server
