@@ -1,9 +1,46 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
+cable:
+  name: Cable
   description: MyText
 
-two:
-  name: MyString
+lever_plate_loaded:
+  name: Lever (plate loaded)
   description: MyText
+
+lever_selectorized:
+  name: Lever (selectorized)
+  description: MyText
+
+weighted:
+  name: Weighted
+  description: MyText
+
+barbell:
+  name: Barbell
+  description: A barbell is a piece of exercise equipment used in weight training, weightlifting and powerlifting. It consists of a metal bar, one or more sets of weight plates, and a set of collars.
+
+dumbbell:
+  name: Dumbbell
+  description: A dumbbell is a piece of equipment used in weight training, and is a type of free weight. They can be used individually or in pairs (one for each hand).
+
+smith:
+  name: Smith
+  description: MyText
+
+body_weight:
+  name: Body Weight
+  description: Exercise done with... body weight...
+
+isometric:
+  name: Isometric
+  description: http://exrx.net/Lists/ExList/NeckWt.html, http://exrx.net/WeightExercises/Splenius/LyingIsometricNeckRetr.html
+
+stretch:
+  name: Stretch
+  description: Stretching...
+
+self_assisted:
+  name: Self-assisted
+  description: Self-assisted...
+
