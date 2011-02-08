@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20110208170419) do
     t.string   "name"
     t.text     "description"
     t.string   "url"
-    t.integer  "musclegroup_id"
+    t.integer  "muscle_group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

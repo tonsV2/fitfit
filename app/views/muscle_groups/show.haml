@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @muscle_group.name
+%p
+  %b Description:
+  = @muscle_group.description
+= link_to 'Edit', edit_muscle_group_path(@muscle_group)
+|
+\#{link_to 'Back', muscle_groups_path}
