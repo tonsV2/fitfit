@@ -1,0 +1,17 @@
+%h1 Listing exercise_types
+%table
+  %tr
+    %th Name
+    %th Description
+    %th
+    %th
+    %th
+  - @exercise_types.each do |exercise_type|
+    %tr
+      %td= exercise_type.name
+      %td= exercise_type.description
+      %td= link_to 'Show', exercise_type
+      %td= link_to 'Edit', edit_exercise_type_path(exercise_type)
+      %td= link_to 'Destroy', exercise_type, :confirm => 'Are you sure?', :method => :delete
+%br/
+= link_to 'New Exercise type', new_exercise_type_path

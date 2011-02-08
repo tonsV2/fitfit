@@ -1,4 +1,6 @@
 Fitfit::Application.routes.draw do
+  resources :exercise_types
+
   resources :muscle_groups
 
   resources :muscles
