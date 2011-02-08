@@ -1,0 +1,25 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @exercise.name
+%p
+  %b Description:
+  = @exercise.description
+%p
+  %b Preparation:
+  = @exercise.preparation
+%p
+  %b Execution:
+  = @exercise.execution
+%p
+  %b Comment:
+  = @exercise.comment
+%p
+  %b Url:
+  = @exercise.url
+%p
+  %b Exercise type:
+  = @exercise.exercise_type.try(:name)
+= link_to 'Edit', edit_exercise_path(@exercise)
+|
+\#{link_to 'Back', exercises_path}
