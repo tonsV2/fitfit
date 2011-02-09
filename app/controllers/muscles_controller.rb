@@ -3,7 +3,12 @@ class MusclesController < ApplicationController
   # GET /muscles.xml
 
   def index
-    @muscles = Muscle.paginate :page => params[:page], :order => 'created_at DESC'
+    if params[:muscle_group_id]
+      muscle_group_id = params[:muscle_group_id]
+      @muscles = Muscle.paginate :page => params[:page], :order => 'created_at DESC', :conditions => ['muscle_group_id = ?', muscle_group_id]
+    else
+      @muscles = Muscle.paginate :page => params[:page], :order => 'created_at DESC'
+    end
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,17 +1,18 @@
 Fitfit::Application.routes.draw do
   devise_for :users
   resources :users
-
-  resources :exercises
-
   resources :exercise_types
-
-  resources :muscle_groups
-
+  resources :exercises
+  resources :muscle_groups do
+    resources :muscles
+  end
   resources :muscles
 
-#  get "home/index"
-	root :to => 'home#index'
+  root :to => 'home#index'
+
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
