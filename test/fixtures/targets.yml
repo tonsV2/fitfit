@@ -1,9 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
+
 one:
-  exercise: 
-  muscle: 
+  exercise: reverse_curl
+  muscle: brachioradialis
 
 two:
-  exercise: 
-  muscle: 
+  exercise: reverse_curl
+  muscle: brachialis
+
+three:
+  exercise: arnold_press
+  muscle: biceps_brachii
