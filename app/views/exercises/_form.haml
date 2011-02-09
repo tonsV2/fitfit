@@ -16,7 +16,7 @@
   %p
     %b Target(s):
     - f.fields_for :muscles do |e|
-      = e.select :muscle_id, @muscles.map {|m| [m.name, m.id]}
+      = e.collection_select :id, Muscle.all, :id, :name
       = e.link_to_remove "-remove"
     = f.link_to_add "Add target muscle", :muscles
 

@@ -16,7 +16,7 @@
   %ul
   - @exercise.targets.each do |t|
     %li
-      = t.muscle.name
+      = t.muscle.try(:name)
 %p
   %b Comment:
   = @exercise.comment
