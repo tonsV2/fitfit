@@ -37,6 +37,7 @@ class ExercisesController < ApplicationController
   def edit
     @exercise = Exercise.find(params[:id])
     @exercise_types = ExerciseType.all
+    @muscles = Muscle.all
   end
 
   # POST /exercises

@@ -15,14 +15,10 @@
 
   %p
     %b Target(s):
-    %ul
     - f.fields_for :muscles do |e|
-      -#= e.label :name
-      = e.text_field :name
-      -#%li :name
+      = e.select :muscle_id, @muscles.map {|m| [m.name, m.id]}
       = e.link_to_remove "-remove"
     = f.link_to_add "Add target muscle", :muscles
-
 
   .field
     = f.label :description
