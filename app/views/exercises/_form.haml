@@ -1,4 +1,5 @@
-= form_for(@exercise) do |f|
+
+- nested_form_for(@exercise) do |f|
   - if @exercise.errors.any?
     #error_explanation
       %h2
@@ -11,6 +12,18 @@
     = f.label :name
     %br/
     = f.text_field :name
+
+  %p
+    %b Target(s):
+    %ul
+    - f.fields_for :muscles do |e|
+      -#= e.label :name
+      = e.text_field :name
+      -#%li :name
+      = e.link_to_remove "-remove"
+    = f.link_to_add "Add target muscle", :muscles
+
+
   .field
     = f.label :description
     %br/

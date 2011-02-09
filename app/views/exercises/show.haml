@@ -11,14 +11,12 @@
 %p
   %b Execution:
   = @exercise.execution
-
 %p
   %b Target(s):
   %ul
   - @exercise.targets.each do |t|
     %li
       = t.muscle.name
-
 %p
   %b Comment:
   = @exercise.comment
