@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110208213156) do
+ActiveRecord::Schema.define(:version => 20110209001627) do
 
   create_table "exercise_types", :force => true do |t|
     t.string   "name"
@@ -50,6 +50,16 @@ ActiveRecord::Schema.define(:version => 20110208213156) do
   create_table "targets", :id => false, :force => true do |t|
     t.integer "exercise_id"
     t.integer "muscle_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.datetime "birthday"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
