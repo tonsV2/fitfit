@@ -7,6 +7,7 @@ Fitfit::Application.routes.draw do
     resources :muscles
   end
   resources :muscles
+  resources :targets
 
   root :to => 'home#index'
 

@@ -6,4 +6,15 @@ class Muscle < ActiveRecord::Base
 
 	has_many :targets
 	has_many :exercises, :through => :targets
+
+	validates_presence_of :name
+
+	def self.search(search, page)
+		if !search.blank?
+			paginate :page => page, :conditions => ['muscle_group_id = ?', search], :order => 'name'
+		else
+			paginate :page => page, :order => 'name'
+		end
+	end
 end
+

@@ -6,10 +6,12 @@
     %th
     %th
     %th
+    %th
   - @muscle_groups.each do |muscle_group|
     %tr
       %td= muscle_group.name
       %td= muscle_group.description
+      %td= link_to 'Show Muscles', muscle_group_muscles_path(muscle_group)
       %td= link_to 'Show', muscle_group
       %td= link_to 'Edit', edit_muscle_group_path(muscle_group)
       %td= link_to 'Destroy', muscle_group, :confirm => 'Are you sure?', :method => :delete
