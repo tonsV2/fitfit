@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110210012057) do
+ActiveRecord::Schema.define(:version => 20110210131009) do
 
   create_table "exercise_types", :force => true do |t|
     t.string   "name"
@@ -52,6 +52,8 @@ ActiveRecord::Schema.define(:version => 20110210012057) do
     t.integer "exercise_id"
     t.integer "muscle_id"
   end
+
+  add_index "targets", ["exercise_id", "muscle_id"], :name => "index_table_on_exercise_and_muscle", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "username"
