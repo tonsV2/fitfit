@@ -10,7 +10,6 @@ class Muscle < ActiveRecord::Base
 	validates_presence_of :name
 	validates_presence_of :muscle_group
 
-
 	def self.search(search, page)
 		if !search.blank?
 			paginate :page => page, :conditions => ['muscle_group_id = ?', search], :order => 'name'

@@ -61,6 +61,19 @@ class ExercisesController < ApplicationController
   # PUT /exercises/1.xml
   def update
     @exercise = Exercise.find(params[:id])
+    @exercise.user = current_user
+
+    params[:exercise][:muscles_attributes].each { |id, muscle|
+      if !muscle[:_destroy]
+        t = Target.all(:conditions => {:exercise_id => @exercise.id, :muscle_id => muscle[:id]})
+        t.first.destroy
+      else
+        if !(Target.all(:conditions => {:exercise_id => @exercise.id, :muscle_id => muscle[:id]}).count == 1)
+          t = Target.new(:exercise_id => @exercise.id, :muscle_id => muscle[:id])
+          t.save
+        end
+      end
+    }
 
     respond_to do |format|
       if @exercise.update_attributes(params[:exercise])
