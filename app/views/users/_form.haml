@@ -26,6 +26,6 @@
   .field
     = f.label :birthday
     %br/
-    = f.datetime_select :birthday
+    = f.date_select :birthday, :start_year => 1920
   .actions
     = f.submit
