@@ -1,4 +1,6 @@
 class ExerciseTypesController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /exercise_types
   # GET /exercise_types.xml
   def index

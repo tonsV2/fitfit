@@ -1,4 +1,6 @@
 class MuscleGroupsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /muscle_groups
   # GET /muscle_groups.xml
   def index
