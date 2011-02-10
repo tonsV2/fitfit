@@ -1,6 +1,7 @@
 class MusclesController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
+
   # GET /muscles
   # GET /muscles.xml
 
@@ -8,6 +9,7 @@ class MusclesController < ApplicationController
     @muscles = Muscle.search(params[:muscle_group_id], params[:page])
 
     respond_to do |format|
+      format.json { render :json => @muscles }
       format.html # index.html.erb
       format.xml  { render :xml => @muscles }
     end
@@ -19,6 +21,7 @@ class MusclesController < ApplicationController
     @muscle = Muscle.find(params[:id])
 
     respond_to do |format|
+      format.json { render :json => @muscle }
       format.html # show.html.erb
       format.xml  { render :xml => @muscle }
     end
