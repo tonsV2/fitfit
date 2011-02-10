@@ -1,4 +1,4 @@
-- nested_form_for(@exercise) do |f|
+= nested_form_for(@exercise) do |f|
   - if @exercise.errors.any?
     #error_explanation
       %h2
@@ -14,7 +14,7 @@
 
   %p
     %b Target(s):
-    - f.fields_for :muscles do |e|
+    = f.fields_for :muscles do |e|
       = e.collection_select :id, Muscle.all, :id, :name
       = e.link_to_remove "-remove"
     = f.link_to_add "Add target muscle", :muscles
