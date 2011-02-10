@@ -63,6 +63,7 @@ class ExercisesController < ApplicationController
     @exercise = Exercise.find(params[:id])
     @exercise.user = current_user
 
+=begin
     params[:exercise][:muscles_attributes].each { |id, muscle|
       if !muscle[:_destroy]
         t = Target.all(:conditions => {:exercise_id => @exercise.id, :muscle_id => muscle[:id]})
@@ -74,6 +75,7 @@ class ExercisesController < ApplicationController
         end
       end
     }
+=end
 
     respond_to do |format|
       if @exercise.update_attributes(params[:exercise])
