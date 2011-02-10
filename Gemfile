@@ -18,6 +18,7 @@ gem 'will_paginate', '3.0.pre2'
 
 gem 'heroku'
 
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -8,6 +8,8 @@ class Muscle < ActiveRecord::Base
 	has_many :exercises, :through => :targets
 
 	validates_presence_of :name
+	validates_presence_of :muscle_group
+
 
 	def self.search(search, page)
 		if !search.blank?

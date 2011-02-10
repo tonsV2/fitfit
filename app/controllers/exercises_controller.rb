@@ -1,4 +1,6 @@
 class ExercisesController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /exercises
   # GET /exercises.xml
   def index
@@ -25,7 +27,7 @@ class ExercisesController < ApplicationController
   # GET /exercises/new.xml
   def new
     @exercise = Exercise.new
-    @exercise_types = ExerciseType.all
+    @exercise.user = current_user
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,14 +38,13 @@ class ExercisesController < ApplicationController
   # GET /exercises/1/edit
   def edit
     @exercise = Exercise.find(params[:id])
-    @exercise_types = ExerciseType.all
-    @muscles = Muscle.all
   end
 
   # POST /exercises
   # POST /exercises.xml
   def create
     @exercise = Exercise.new(params[:exercise])
+    @exercise.user = current_user
 
     respond_to do |format|
       if @exercise.save

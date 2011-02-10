@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :username, :password, :password_confirmation, :remember_me
 
 
-  has_many :recipes
+  has_many :exercises
 
   validates_presence_of :username
   validates_uniqueness_of :username

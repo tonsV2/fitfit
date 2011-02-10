@@ -3,6 +3,9 @@
   %b Name:
   = @exercise.name
 %p
+  %b User:
+  = @exercise.user.try(:username)
+%p
   %b Description:
   = @exercise.description
 %p

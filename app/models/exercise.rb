@@ -1,6 +1,8 @@
 class Exercise < ActiveRecord::Base
   belongs_to :exercise_type
 
+  belongs_to :user
+
   has_many :targets
   has_many :muscles, :through => :targets
 
@@ -8,4 +10,5 @@ class Exercise < ActiveRecord::Base
 
 
   validates_presence_of :name
+  validates_presence_of :user
 end
