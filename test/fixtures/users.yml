@@ -1,15 +1,42 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  username: MyString
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  birthday: 2011-02-09 01:16:27
+admin:
+  username: snot
+  email: sebastianthegreatful@gmail.com
+  first_name: Super
+  last_name: Snot
+  birthday: 1980-02-09 01:16:27
+  encrypted_password: $2a$10$DDXorZsG.OXXwZe2txHCcO9fM7D8IxA1Zd9vPnMZiy.V93eYtS1pm
+  reset_password_token:
+  remember_token:
+  remember_created_at:
+  sign_in_count: 15
+  current_sign_in_at: 2011-02-10 02:41:05 +0100
+  last_sign_in_at: 2011-02-10 02:25:21 +0100
+  current_sign_in_ip: 192.168.0.152
+  last_sign_in_ip: 87.72.197.220
+  confirmation_token:
+  confirmed_at: 2011-02-06 20:45:42 +0100
+  confirmation_sent_at: 2011-02-06 20:38:44 +0100
+  admin: true
 
-two:
-  username: MyString
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  birthday: 2011-02-09 01:16:27
+not_admin:
+  username: some_user_not_admin
+  email: sebastianthegreatful@gmail.com
+  first_name: some
+  last_name: name
+  birthday: 1980-02-09 01:16:27
+  encrypted_password: $2a$10$DDXorZsG.OXXwZe2txHCcO9fM7D8IxA1Zd9vPnMZiy.V93eYtS1pm
+  reset_password_token:
+  remember_token:
+  remember_created_at:
+  sign_in_count: 15
+  current_sign_in_at: 2010-02-10 02:41:05 +0100
+  last_sign_in_at: 2010-02-10 02:25:21 +0100
+  current_sign_in_ip: 192.168.0.152
+  last_sign_in_ip: 87.72.197.220
+  confirmation_token:
+  confirmed_at: 2010-02-06 20:45:42 +0100
+  confirmation_sent_at: 2010-02-06 20:38:44 +0100
+  admin: false
+
