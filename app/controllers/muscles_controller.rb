@@ -26,7 +26,6 @@ class MusclesController < ApplicationController
   # GET /muscles/new.xml
   def new
     @muscle = Muscle.new
-    @muscle_groups = MuscleGroup.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,7 +36,6 @@ class MusclesController < ApplicationController
   # GET /muscles/1/edit
   def edit
     @muscle = Muscle.find(params[:id])
-    @muscle_groups = MuscleGroup.all
   end
 
   # POST /muscles

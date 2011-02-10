@@ -22,6 +22,6 @@
   .field
     = f.label :muscle_group
     %br/
-    = f.select :muscle_group_id, @muscle_groups.map {|f| [f.name, f.id]}
+    = f.collection_select :muscle_group_id, MuscleGroup.all, :id, :name
   .actions
     = f.submit
