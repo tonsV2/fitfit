@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20110210131009) do
     t.datetime "updated_at"
   end
 
-  create_table "targets", :id => false, :force => true do |t|
+  create_table "targets", :force => true do |t|
     t.integer "exercise_id"
     t.integer "muscle_id"
   end
