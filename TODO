@@ -1,4 +1,7 @@
-delete targets if muscle or exercise is deleted
+users birthday is a datetime... use just date. changing the date at user/id/edit has no effect
 
 only allow users to edit and delete them self
+
 only allow users to delete and their own exercises and programs
+
+
