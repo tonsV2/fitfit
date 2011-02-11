@@ -38,6 +38,17 @@ Fitfit::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { :host => "fitfit.heroku.com" }
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :domain => "gmail.com",
+    :authentication => :login,
+    :user_name => "sebastianthegreatful@gmail.com",
+    :password => "60udev",
+  }
+
   # Enable threaded mode
   # config.threadsafe!
 
@@ -48,3 +59,4 @@ Fitfit::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 end
+
